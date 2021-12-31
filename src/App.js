@@ -1,51 +1,15 @@
 import Header from "./components/header/Header";
+import Sidebar from "./components/sidebar/Sidebar";
+import "./App.css";
 
 function App() {
   return (
     <div>
       <Header />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
-      Ojok Simon Peter <br />
+      <div className="sidebar-container">
+        <Sidebar />
+        <div className="others">Other pages</div>
+      </div>
     </div>
   );
 }
