@@ -1,3 +1,8 @@
 .dashboard {
-  flex: 6;
+  flex: 5;
+}
+
+.dashboard-widget {
+  display: flex;
+  margin: 20px;
 }
