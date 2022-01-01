@@ -8,9 +8,9 @@ export default function FeatureInfo() {
       <div className="featured-item">
         <span className="feature-title">Revenue</span>
         <div className="money-container">
-          <span className="feature-money">$2,415.00</span>
+          <span className="feature-money">UGX 12,415,750</span>
           <span className="money-rate">
-            -11.4 <ArrowDownward className="money-icon negative" />
+            -114,800 <ArrowDownward className="money-icon negative" />
           </span>
         </div>
         <span className="feature-compare">Compared to last month</span>
@@ -18,9 +18,9 @@ export default function FeatureInfo() {
       <div className="featured-item">
         <span className="feature-title">Sales</span>
         <div className="money-container">
-          <span className="feature-money">$4,415.00</span>
+          <span className="feature-money">UGX 4,415,200</span>
           <span className="money-rate">
-            -1.4 <ArrowDownward className="money-icon negative" />
+            -148,000 <ArrowDownward className="money-icon negative" />
           </span>
         </div>
         <span className="feature-compare">Compared to last month</span>
@@ -28,9 +28,9 @@ export default function FeatureInfo() {
       <div className="featured-item">
         <span className="feature-title">Cost</span>
         <div className="money-container">
-          <span className="feature-money">$3,815.00</span>
+          <span className="feature-money">UGX 3,815,500</span>
           <span className="money-rate">
-            +8.4 <ArrowUpward className="money-icon" />
+            +889,460 <ArrowUpward className="money-icon" />
           </span>
         </div>
         <span className="feature-compare">Compared to last month</span>
