@@ -1,6 +1,7 @@
 import "./UserList.css";
 import { DataGrid } from "@mui/x-data-grid";
 import { DeleteOutlined, Edit } from "@mui/icons-material";
+import { userRows } from "../../data";
 
 export default function UserList() {
   const columns = [
@@ -44,95 +45,13 @@ export default function UserList() {
     },
   ];
 
-  const rows = [
-    {
-      id: 1,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 2,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 3,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Inactive",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 4,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 5,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 6,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 7,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 8,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 9,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-    {
-      id: 10,
-      username: "Ojok Simon Peter",
-      avatar: "images/Ojok.jpg",
-      email: "simonpeter.oj@gmail.com",
-      status: "Active",
-      transaction: "UGX 489,000",
-    },
-  ];
-
   return (
     <div className="user-list">
       <DataGrid
-        rows={rows}
+        disableSelectionOnClick
+        rows={userRows}
         columns={columns}
-        pageSize={5}
+        pageSize={8}
         rowsPerPageOptions={[5]}
         checkboxSelection
       />
