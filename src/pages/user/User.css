@@ -47,8 +47,11 @@
 .show-user {
   display: flex;
   flex-direction: column;
+}
+
+.show-user-top {
+  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .show-user-iamge {
@@ -58,10 +61,26 @@
   object-fit: cover;
 }
 
+.show-user-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
 .show-username {
   font-weight: 600;
 }
 
 .show-user-title {
   font-weight: 300;
+}
+
+.show-user-account-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(175, 175, 175);
+}
+
+.show-user-info {
+  display: flex;
 }
