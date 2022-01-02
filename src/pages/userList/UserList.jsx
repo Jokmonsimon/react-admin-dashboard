@@ -2,8 +2,15 @@ import "./UserList.css";
 import { DataGrid } from "@mui/x-data-grid";
 import { DeleteOutlined, Edit } from "@mui/icons-material";
 import { userRows } from "../../data";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function UserList() {
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
   const columns = [
     { field: "id", headerName: "ID", width: 40 },
     {
@@ -37,8 +44,14 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <Edit className="user-list-edit" />
-            <DeleteOutlined className="user-list-delete" />
+            <Link to={"/user/" + params.row.id}>
+              <Edit className="user-list-edit" />
+            </Link>
+
+            <DeleteOutlined
+              className="user-list-delete"
+              onClick={() => handleDelete(params.row.id)}
+            />
           </>
         );
       },
@@ -49,7 +62,7 @@ export default function UserList() {
     <div className="user-list">
       <DataGrid
         disableSelectionOnClick
-        rows={userRows}
+        rows={data}
         columns={columns}
         pageSize={8}
         rowsPerPageOptions={[5]}
