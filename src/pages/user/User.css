@@ -10,7 +10,9 @@
 }
 
 .add-user-button {
-  width: 80px;
+  display: flex;
+  align-items: center;
+  width: 100px;
   border: none;
   padding: 5px;
   background-color: teal;
@@ -22,12 +24,14 @@
 
 .user-container {
   display: flex;
+  margin-top: 20px;
 }
 
 .show-user {
   flex: 1;
   padding: 20px;
   margin-right: 20px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 15px -5px #000000;
   box-shadow: 5px 5px 15px -5px #000000;
 }
@@ -35,6 +39,29 @@
 .update-user {
   flex: 3;
   padding: 20px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 15px -5px #000000;
   box-shadow: 5px 5px 15px -5px #000000;
+}
+
+.show-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-user-iamge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.show-username {
+  font-weight: 600;
+}
+
+.show-user-title {
+  font-weight: 300;
 }
