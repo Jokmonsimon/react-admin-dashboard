@@ -75,6 +75,10 @@
   font-weight: 300;
 }
 
+.show-user-button {
+  margin-top: 20px;
+}
+
 .show-user-account-title {
   font-size: 14px;
   font-weight: 600;
@@ -83,4 +87,15 @@
 
 .show-user-info {
   display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+
+.show-user-icon {
+  font-size: 16px !important;
+}
+
+.show-user-detail-info {
+  margin-left: 10px;
 }
