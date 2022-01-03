@@ -36,6 +36,7 @@ export default function User() {
               <CalendarToday className="show-user-icon" />
               <div className="show-user-detail-info">03 June 1993</div>
             </div>
+            <span className="show-user-account-title">Contact Details</span>
             <div className="show-user-info">
               <PhoneAndroid className="show-user-icon" />
               <div className="show-user-detail-info">+256 776 020 431</div>
@@ -44,13 +45,61 @@ export default function User() {
               <MailOutlined className="show-user-icon" />
               <div className="show-user-detail-info">sp.jokmon@gmail.com</div>
             </div>
+            <span className="show-user-account-title">Address</span>
             <div className="show-user-info">
               <LocationCityOutlined className="show-user-icon" />
               <div className="show-user-detail-info">Gulu | Uganda</div>
             </div>
           </div>
         </div>
-        <div className="update-user">User Information</div>
+        <div className="update-user">
+          <span className="upade-user-info">Edit</span>
+          <form className="update-user-info">
+            <div className="update-user-info-left">
+              <div className="update-user-info-details">
+                <label>Username</label>
+                <input
+                  type="text"
+                  placeholder="jokmonsimon"
+                  className="update-user-input"
+                />
+              </div>
+              <div className="update-user-info-details">
+                <label>Date of Birth</label>
+                <input
+                  type="text"
+                  placeholder="03 June 1993"
+                  className="update-user-input"
+                />
+              </div>
+              <div className="update-user-info-details">
+                <label>Phone Number</label>
+                <input
+                  type="text"
+                  placeholder="+256 776 020 431"
+                  className="update-user-input"
+                />
+              </div>
+              <div className="update-user-info-details">
+                <label>Email</label>
+                <input
+                  type="text"
+                  placeholder="simonpeter.oj@gmail.com"
+                  className="update-user-input"
+                />
+              </div>
+              <div className="update-user-info-details">
+                <label>Address</label>
+                <input
+                  type="text"
+                  placeholder="Gulu | Uganda"
+                  className="update-user-input"
+                />
+              </div>
+            </div>
+            <div className="update-user-info-right"></div>
+          </form>
+        </div>
       </div>
     </div>
   );
