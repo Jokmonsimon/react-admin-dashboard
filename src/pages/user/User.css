@@ -102,6 +102,11 @@
   margin-left: 10px;
 }
 
+.update-user-info-form {
+  display: flex;
+  justify-content: space-between;
+}
+
 .user-profile-image {
   width: 100px;
   height: 100px;
