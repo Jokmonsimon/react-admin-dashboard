@@ -122,7 +122,7 @@ export default function User() {
                   className="user-profile-image"
                 />
                 <label htmlFor="file">
-                  <Publish />
+                  <Publish className="update-user-icon" />
                 </label>
                 <input
                   type="file"
