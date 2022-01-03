@@ -4,6 +4,7 @@ import {
   LocationCityOutlined,
   MailOutlined,
   PhoneAndroid,
+  Publish,
 } from "@mui/icons-material";
 import "./User.css";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
@@ -119,6 +120,15 @@ export default function User() {
                   src="/images/Ojok.jpg"
                   alt=""
                   className="user-profile-image"
+                />
+                <label htmlFor="file">
+                  <Publish />
+                </label>
+                <input
+                  type="file"
+                  id="file"
+                  className="choose-user-profile-image"
+                  style={{ display: "none" }}
                 />
               </div>
             </div>
