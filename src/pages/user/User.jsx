@@ -131,6 +131,7 @@ export default function User() {
                   style={{ display: "none" }}
                 />
               </div>
+              <button className="update-user-button">Update</button>
             </div>
           </form>
         </div>
