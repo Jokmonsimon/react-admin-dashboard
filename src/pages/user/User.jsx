@@ -65,6 +65,22 @@ export default function User() {
                 />
               </div>
               <div className="update-user-info-details">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Ojok Simon Peter"
+                  className="update-username-input"
+                />
+              </div>
+              <div className="update-user-info-details">
+                <label>Job Title</label>
+                <input
+                  type="text"
+                  placeholder="Full-stack Developer"
+                  className="update-username-input"
+                />
+              </div>
+              <div className="update-user-info-details">
                 <label>Date of Birth</label>
                 <input
                   type="text"
@@ -97,7 +113,15 @@ export default function User() {
                 />
               </div>
             </div>
-            <div className="update-user-info-right"></div>
+            <div className="update-user-info-right">
+              <div className="update-user-image">
+                <img
+                  src="/images/Ojok.jpg"
+                  alt=""
+                  className="user-profile-image"
+                />
+              </div>
+            </div>
           </form>
         </div>
       </div>
