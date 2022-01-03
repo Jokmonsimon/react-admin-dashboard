@@ -8,15 +8,18 @@ import {
 } from "@mui/icons-material";
 import "./User.css";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import { Link } from "react-router-dom";
 
 export default function User() {
   return (
     <div className="user">
       <div className="user-title-container">
         <h1 className="user-title">Edit User</h1>
-        <button className="add-user-button">
-          <Add /> Add User
-        </button>
+        <Link to="/addNewUser">
+          <button className="add-user-button">
+            <Add /> Add User
+          </button>
+        </Link>
       </div>
       <div className="user-container">
         <div className="show-user">
