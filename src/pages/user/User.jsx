@@ -55,7 +55,7 @@ export default function User() {
         </div>
         <div className="update-user">
           <span className="upade-user-info">Edit</span>
-          <form className="update-user-info">
+          <form className="update-user-info-form">
             <div className="update-user-info-left">
               <div className="update-user-info-details">
                 <label>Username</label>
