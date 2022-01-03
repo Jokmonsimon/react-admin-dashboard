@@ -133,8 +133,12 @@
 
 .update-user-image {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.update-user-icon {
+  cursor: pointer;
+  color: blue;
 }
 
 .update-user-info-right {
