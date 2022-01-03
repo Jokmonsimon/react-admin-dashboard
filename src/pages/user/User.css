@@ -102,9 +102,15 @@
   margin-left: 10px;
 }
 
+.upade-user-info-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .update-user-info-form {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .user-profile-image {
@@ -113,4 +119,15 @@
   border-radius: 10%;
   object-fit: cover;
   margin-right: 10px;
+}
+
+.update-user-info-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.update-user-info-details > label {
+  margin-bottom: 5px;
+  font-size: 14px;
 }
