@@ -137,10 +137,29 @@
   align-items: center;
 }
 
+.update-user-info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .user-profile-image {
   width: 100px;
   height: 100px;
   border-radius: 10%;
   object-fit: cover;
   margin-right: 10px;
+}
+
+.update-user-button {
+  border: none;
+  width: 120px;
+  height: 35px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
