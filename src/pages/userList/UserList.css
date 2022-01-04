@@ -16,6 +16,12 @@
   margin-right: 10px;
 }
 
+.edit-user-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .user-list-edit {
   color: blueviolet;
   cursor: pointer;
