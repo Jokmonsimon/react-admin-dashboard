@@ -1,7 +1,7 @@
 import "./UserList.css";
 import { DataGrid } from "@mui/x-data-grid";
 import { DeleteOutlined, Edit } from "@mui/icons-material";
-import { userRows } from "../../data";
+import { productRows } from "../../data";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
