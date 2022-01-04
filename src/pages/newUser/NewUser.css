@@ -1,3 +1,50 @@
 .new-user-container {
   flex: 5;
+  margin-left: 20px;
+}
+
+.new-user-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-user-form-item {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.new-user-form-item > label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(168, 166, 166);
+}
+
+.new-user-form-item > input {
+  height: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.new-user-form-item > select {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.new-user-gender > input {
+  margin-top: 15px;
+}
+
+.new-user-gender > label {
+  margin: 10px;
+}
+
+.new-user-button {
+  border: none;
 }
