@@ -22,15 +22,21 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item active">
-              <Home className="sidebar-icon" /> Home
-            </li>
-            <li className="sidebar-list-item">
-              <Timeline className="sidebar-icon" /> Analytics
-            </li>
-            <li className="sidebar-list-item">
-              <TrendingUp className="sidebar-icon" /> Sales
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebar-list-item active">
+                <Home className="sidebar-icon" /> Home
+              </li>
+            </Link>
+            <Link to="/analytics" className="link">
+              <li className="sidebar-list-item">
+                <Timeline className="sidebar-icon" /> Analytics
+              </li>
+            </Link>
+            <Link to="/sales" className="link">
+              <li className="sidebar-list-item">
+                <TrendingUp className="sidebar-icon" /> Sales
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebar-menu">
