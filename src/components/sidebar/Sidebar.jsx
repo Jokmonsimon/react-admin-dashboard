@@ -13,6 +13,7 @@ import {
   Timeline,
   TrendingUp,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -35,46 +36,66 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item">
-              <SupervisedUserCircle className="sidebar-icon" /> Users
-            </li>
-            <li className="sidebar-list-item">
-              <Inventory className="sidebar-icon" /> Products
-            </li>
-            <li className="sidebar-list-item">
-              <AttachMoney className="sidebar-icon" /> Transactions
-            </li>
-            <li className="sidebar-list-item">
-              <Summarize className="sidebar-icon" /> Reports
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebar-list-item">
+                <SupervisedUserCircle className="sidebar-icon" /> Users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebar-list-item">
+                <Inventory className="sidebar-icon" /> Products
+              </li>
+            </Link>
+            <Link to="/transactions" className="link">
+              <li className="sidebar-list-item">
+                <AttachMoney className="sidebar-icon" /> Transactions
+              </li>
+            </Link>
+            <Link to="/productReports" className="link">
+              <li className="sidebar-list-item">
+                <Summarize className="sidebar-icon" /> Reports
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Notification</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item">
-              <Email className="sidebar-icon" /> Mail
-            </li>
-            <li className="sidebar-list-item">
-              <Feedback className="sidebar-icon" /> Feedback
-            </li>
-            <li className="sidebar-list-item">
-              <Chat className="sidebar-icon" /> Messages
-            </li>
+            <Link to="/mail" className="link">
+              <li className="sidebar-list-item">
+                <Email className="sidebar-icon" /> Mail
+              </li>
+            </Link>
+            <Link to="/feedback" className="link">
+              <li className="sidebar-list-item">
+                <Feedback className="sidebar-icon" /> Feedback
+              </li>
+            </Link>
+            <Link to="/messages" className="link">
+              <li className="sidebar-list-item">
+                <Chat className="sidebar-icon" /> Messages
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Staff</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item">
-              <ManageAccounts className="sidebar-icon" /> Manage
-            </li>
-            <li className="sidebar-list-item">
-              <Timeline className="sidebar-icon" /> Analytics
-            </li>
-            <li className="sidebar-list-item">
-              <Summarize className="sidebar-icon" /> Reports
-            </li>
+            <Link to="/manage" className="link">
+              <li className="sidebar-list-item">
+                <ManageAccounts className="sidebar-icon" /> Manage
+              </li>
+            </Link>
+            <Link to="/analytics" className="link">
+              <li className="sidebar-list-item">
+                <Timeline className="sidebar-icon" /> Analytics
+              </li>
+            </Link>
+            <Link to="/reports" className="link">
+              <li className="sidebar-list-item">
+                <Summarize className="sidebar-icon" /> Reports
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
