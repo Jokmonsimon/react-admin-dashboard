@@ -18,8 +18,40 @@ export default function NewUser() {
           />
         </div>
         <div className="new-user-form-item">
+          <label className="new-user-username">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            className="new-user-input"
+          />
+        </div>
+        <div className="new-user-form-item">
+          <label className="new-user-username">Phone</label>
+          <input
+            type="text"
+            placeholder="+256 776 020 431"
+            className="new-user-input"
+          />
+        </div>
+        <div className="new-user-form-item">
+          <label className="new-user-username">Address</label>
+          <input
+            type="text"
+            placeholder="Gulu | Uganda"
+            className="new-user-input"
+          />
+        </div>
+        <div className="new-user-form-item">
+          <label className="new-user-username">Status</label>
+          <select name="status" id="status">
+            <option value="active">Active</option>
+            <option value="Pending">Pending</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+        <div className="new-user-form-item">
           <div className="new-user-gender">
-            <label className="new-user-username">Gender</label>
+            <label className="new-user-username">Gender: </label>
             <input
               type="radio"
               name="gender"
@@ -54,38 +86,7 @@ export default function NewUser() {
             className="new-user-input"
           />
         </div>
-        <div className="new-user-form-item">
-          <label className="new-user-username">Password</label>
-          <input
-            type="password"
-            placeholder="password"
-            className="new-user-input"
-          />
-        </div>
-        <div className="new-user-form-item">
-          <label className="new-user-username">Phone</label>
-          <input
-            type="text"
-            placeholder="+256 776 020 431"
-            className="new-user-input"
-          />
-        </div>
-        <div className="new-user-form-item">
-          <label className="new-user-username">Address</label>
-          <input
-            type="text"
-            placeholder="Gulu | Uganda"
-            className="new-user-input"
-          />
-        </div>
-        <div className="new-user-form-item">
-          <label className="new-user-username">Status</label>
-          <select name="status" id="status">
-            <option value="active">Active</option>
-            <option value="Pending">Pending</option>
-            <option value="Inactive">Inactive</option>
-          </select>
-        </div>
+        <button className="new-user-button">Create</button>
       </form>
     </div>
   );
