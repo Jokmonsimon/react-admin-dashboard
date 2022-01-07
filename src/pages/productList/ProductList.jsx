@@ -8,15 +8,15 @@ import { useState } from "react";
 export default function ProductList() {
   const [data, setData] = useState(productRows);
 
-  const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+  const handleDelete = (productId) => {
+    setData(data.filter((item) => item.productId !== productId));
   };
 
   const columns = [
     { field: "productId", headerName: "ID", width: 40 },
     {
-      field: "user",
-      headerName: "User",
+      field: "productName",
+      headerName: "Product Name",
       width: 200,
       renderCell: (params) => {
         return (
