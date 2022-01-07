@@ -145,7 +145,7 @@ export const productRows = [
   {
     productId: 2,
     productName: "Laptop",
-    productImage:
+    productName:
       "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_960_720.jpg",
     stock: 432,
     status: "Available",
