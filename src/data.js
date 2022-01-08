@@ -138,7 +138,7 @@ export const productRows = [
     productName: "Apple",
     productImage:
       "https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg",
-    stock: 145,
+    stock: 300,
     status: "Available",
     price: "UGX 4,000",
   },
