@@ -72,7 +72,7 @@ export const userRows = [
     avatar: "images/Ojok.jpg",
     email: "simonpeter.oj@gmail.com",
     status: "Inactive",
-    transaction: "UGX 489,000",
+    transaction: "UGX 763,000",
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ export const userRows = [
     avatar: "images/Ojok.jpg",
     email: "simonpeter.oj@gmail.com",
     status: "Active",
-    transaction: "UGX 489,000",
+    transaction: "UGX 554,000",
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ export const userRows = [
     avatar: "images/Ojok.jpg",
     email: "simonpeter.oj@gmail.com",
     status: "Active",
-    transaction: "UGX 489,000",
+    transaction: "UGX 321,000",
   },
   {
     id: 6,
@@ -185,7 +185,7 @@ export const productRows = [
       "https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg",
     stock: 145,
     status: "Available",
-    price: "UGX 4,000",
+    price: "UGX 6,000",
   },
   {
     productId: 2,
@@ -221,6 +221,6 @@ export const productRows = [
       "https://cdn.pixabay.com/photo/2019/11/23/20/04/coffee-4648041_960_720.jpg",
     stock: 145,
     status: "Available",
-    price: "UGX 8,000",
+    price: "UGX 28,000",
   },
 ];
