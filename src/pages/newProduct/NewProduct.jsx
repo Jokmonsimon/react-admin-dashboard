@@ -1,5 +1,5 @@
 import "./NewProduct.css";
 
 export default function NewProduct() {
-  return <div>New Product</div>;
+  return <div className="new-product">New Product</div>;
 }
