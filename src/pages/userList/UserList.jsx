@@ -1,6 +1,6 @@
 import "./UserList.css";
 import { DataGrid } from "@mui/x-data-grid";
-import { DeleteOutlined, Edit } from "@mui/icons-material";
+import { Add, DeleteOutlined, Edit } from "@mui/icons-material";
 import { userRows } from "../../data";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -59,6 +59,14 @@ export default function UserList() {
 
   return (
     <div className="user-list">
+      <div className="user-title-container">
+        <h1 className="user-title">User List</h1>
+        <Link to="/addNewUser" className="link">
+          <button className="add-user-button">
+            <Add /> Add User
+          </button>
+        </Link>
+      </div>
       <DataGrid
         disableSelectionOnClick
         rows={data}
