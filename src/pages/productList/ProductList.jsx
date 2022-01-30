@@ -8,34 +8,39 @@ import { useState } from "react";
 export default function ProductList() {
   const [data, setData] = useState(productRows);
 
-  const handleDelete = (productId) => {
-    setData(data.filter((item) => item.productId !== productId));
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
   };
 
   const columns = [
-    { field: "productId", headerName: "ID", width: 40 },
+    { field: "id", headerName: "ID", width: 40 },
     {
       field: "productName",
-      headerName: "Product Name",
+      headerName: "Product",
       width: 200,
       renderCell: (params) => {
         return (
-          <div className="user-list-user">
-            <img src={params.row.avatar} alt="" className="user-list-image" />
-            {params.row.username}
+          <div className="product-list-product">
+            <img
+              src={params.row.productImage}
+              alt=""
+              className="product-list-image"
+            />
+            {params.row.productName}
           </div>
         );
       },
     },
-    { field: "email", headerName: "Email", width: 200 },
+    { field: "productCategory", headerName: "Category", width: 200 },
+    { field: "stock", headerName: "Stock", width: 100 },
     {
       field: "status",
       headerName: "Status",
       width: 120,
     },
     {
-      field: "transaction",
-      headerName: "Transaction",
+      field: "price",
+      headerName: "Price",
       width: 150,
     },
     {
@@ -45,11 +50,11 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/user/" + params.row.id} className="link">
-              <Edit className="user-list-edit" />
+            <Link to={"/product/" + params.row.id} className="link">
+              <Edit className="product-list-edit" />
             </Link>
             <DeleteOutlined
-              className="user-list-delete"
+              className="product-list-delete"
               onClick={() => handleDelete(params.row.id)}
             />
           </>
@@ -65,7 +70,7 @@ export default function ProductList() {
         disableSelectionOnClick
         rows={data}
         columns={columns}
-        pageSize={9}
+        pageSize={8}
         rowsPerPageOptions={[5]}
         checkboxSelection
       />
