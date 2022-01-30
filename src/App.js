@@ -7,6 +7,8 @@ import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
+import Product from "./pages/product/Product";
+import NewProduct from "./pages/newProduct/NewProduct";
 
 function App() {
   return (
@@ -20,8 +22,8 @@ function App() {
           <Route path="/user/:id" element={<User />} />
           <Route path="/addNewUser" element={<NewUser />} />
           <Route path="/products" element={<ProductList />} />
-          <Route path="/product/:id" element={<User />} />
-          <Route path="/addNewProduct" element={<NewUser />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/addNewProduct" element={<NewProduct />} />
         </Routes>
       </div>
     </BrowserRouter>
