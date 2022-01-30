@@ -1,6 +1,6 @@
 import "./ProductList.css";
 import { DataGrid } from "@mui/x-data-grid";
-import { DeleteOutlined, Edit } from "@mui/icons-material";
+import { Add, DeleteOutlined, Edit } from "@mui/icons-material";
 import { productRows } from "../../data";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -65,7 +65,14 @@ export default function ProductList() {
 
   return (
     <div className="product-list">
-      <h1 className="product-title">Product List</h1>
+      <div className="product-title-container">
+        <h1 className="product-title">Product List</h1>
+        <Link to="/addNewProduct" className="link">
+          <button className="add-product-button">
+            <Add /> Add Product
+          </button>
+        </Link>
+      </div>
       <DataGrid
         disableSelectionOnClick
         rows={data}
