@@ -1,6 +1,6 @@
 .user {
   flex: 5;
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 .user-title-container {
@@ -12,7 +12,7 @@
 .add-user-button {
   display: flex;
   align-items: center;
-  width: 100px;
+  width: 120px;
   border: none;
   padding: 5px;
   background-color: teal;
