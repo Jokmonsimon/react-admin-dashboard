@@ -1,4 +1,38 @@
 .product-list {
   flex: 5;
-  padding: 20px;
+  padding: 0px 20px;
+}
+
+.product-title {
+  margin-bottom: 10px;
+}
+
+.product-list-product {
+  display: flex;
+  align-items: center;
+}
+
+.product-list-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.edit-product-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-list-edit {
+  color: blueviolet;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.product-list-delete {
+  color: red;
+  cursor: pointer;
 }
