@@ -1,6 +1,13 @@
 .user-list {
   flex: 5;
-  padding: 20px;
+  margin: 0px 20px;
+}
+
+.user-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .user-list-user {
