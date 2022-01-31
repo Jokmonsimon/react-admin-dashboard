@@ -1,13 +1,7 @@
 import "./Product.css";
-import {
-  Add,
-  CalendarToday,
-  LocationCityOutlined,
-  MailOutlined,
-  PhoneAndroid,
-  Publish,
-} from "@mui/icons-material";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import Chart from "../../components/chart/Chart";
+import { productData } from "../../data";
+import { Add, Publish } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function Product() {
@@ -21,125 +15,86 @@ export default function Product() {
           </button>
         </Link>
       </div>
-      <div className="product-container">
-        <div className="show-product">
-          <div className="show-product-top">
-            <img src="/images/Ojok.jpg" alt="" className="show-product-iamge" />
-            <div className="show-product-details">
-              <span className="show-product-un">Ojok Simon Peter</span>
-              <span className="show-product-title">Full-stack Developer</span>
-            </div>
+      <div className="product-top">
+        <div className="product-top-left">
+          <Chart data={productData} dataKey="Sales" title="Sales Performance" />
+        </div>
+        <div className="product-top-right">
+          <div className="product-info-top">
+            <img
+              src="/images/apple.jpg"
+              alt="Apple"
+              className="product-info-image"
+            />
+            <span className="product-name">Apple</span>
           </div>
-          <div className="show-product-button">
-            <span className="show-product-account-title">Account Details</span>
-            <div className="show-product-info">
-              <PermIdentityIcon className="show-product-icon" />
-              <div className="show-product-detail-info">jokmonsimon</div>
+          <div className="product-info-bottom">
+            <div className="product-info-item">
+              <span className="product-info-key">Product ID:</span>
+              <span className="product-info-value">123</span>
             </div>
-            <div className="show-product-info">
-              <CalendarToday className="show-product-icon" />
-              <div className="show-product-detail-info">03 June 1993</div>
+            <div className="product-info-item">
+              <span className="product-info-key">Sales:</span>
+              <span className="product-info-value">5123</span>
             </div>
-            <span className="show-product-account-title">Contact Details</span>
-            <div className="show-product-info">
-              <PhoneAndroid className="show-product-icon" />
-              <div className="show-product-detail-info">+256 776 020 431</div>
+            <div className="product-info-item">
+              <span className="product-info-key">Active:</span>
+              <span className="product-info-value">yes</span>
             </div>
-            <div className="show-product-info">
-              <MailOutlined className="show-product-icon" />
-              <div className="show-product-detail-info">
-                sp.jokmon@gmail.com
-              </div>
-            </div>
-            <span className="show-product-account-title">Address</span>
-            <div className="show-product-info">
-              <LocationCityOutlined className="show-product-icon" />
-              <div className="show-product-detail-info">Gulu | Uganda</div>
+            <div className="product-info-item">
+              <span className="product-info-key">In Stock:</span>
+              <span className="product-info-value">No</span>
             </div>
           </div>
         </div>
-        <div className="update-product">
-          <span className="upade-product-info-title">Edit Product Details</span>
-          <form className="update-product-info-form">
-            <div className="update-product-info-left">
-              <div className="update-product-info-details">
-                <label>Username</label>
-                <input
-                  type="text"
-                  placeholder="jokmonsimon"
-                  className="update-product-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Full Name</label>
-                <input
-                  type="text"
-                  placeholder="Ojok Simon Peter"
-                  className="update-username-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Job Title</label>
-                <input
-                  type="text"
-                  placeholder="Full-stack Developer"
-                  className="update-username-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Date of Birth</label>
-                <input
-                  type="text"
-                  placeholder="03 June 1993"
-                  className="update-product-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Phone Number</label>
-                <input
-                  type="text"
-                  placeholder="+256 776 020 431"
-                  className="update-product-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Email</label>
-                <input
-                  type="text"
-                  placeholder="simonpeter.oj@gmail.com"
-                  className="update-product-input"
-                />
-              </div>
-              <div className="update-product-info-details">
-                <label>Address</label>
-                <input
-                  type="text"
-                  placeholder="Gulu | Uganda"
-                  className="update-product-input"
-                />
-              </div>
+      </div>
+      <div className="product-bottom">
+        <form className="product-form">
+          <div className="product-form-left">
+            <label>Product Name</label>
+            <input type="text" placeholder="Apple" />
+            <label>Category</label>
+            <select name="inStock" id="idStock">
+              <option selected disabled>
+                Select Category
+              </option>
+              <option value="cereals">Cereals</option>
+              <option value="detergents">Detergents</option>
+              <option value="fruits">Fruits</option>
+              <option value="gifts">Gifts</option>
+              <option value="hardDrinks">Hard Drinks</option>
+              <option value="pestTrees">Pest Trees</option>
+              <option value="toiletTress">Toilet Tress</option>
+              <option value="softDrinks">Soft Drinks</option>
+              <option value="spices">Spices</option>
+              <option value="staionaries">Stationaries</option>
+            </select>
+            <label>In Stock</label>
+            <select name="inStock" id="idStock">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <label>Active</label>
+            <select name="active" id="active">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div className="product-form-right">
+            <div className="product-upload">
+              <img
+                src="/images/apple.jpg"
+                alt="Product Image"
+                className="product-upload-image"
+              />
+              <label for="file">
+                <Publish />
+              </label>
+              <input type="file" id="file" style={{ display: "none" }} />
             </div>
-            <div className="update-product-info-right">
-              <div className="update-product-image">
-                <img
-                  src="/images/Ojok.jpg"
-                  alt=""
-                  className="product-profile-image"
-                />
-                <label htmlFor="file">
-                  <Publish className="update-product-icon" />
-                </label>
-                <input
-                  type="file"
-                  id="file"
-                  className="choose-product-profile-image"
-                  style={{ display: "none" }}
-                />
-              </div>
-              <button className="update-product-button">Update</button>
-            </div>
-          </form>
-        </div>
+            <button className="product-button">Update</button>
+          </div>
+        </form>
       </div>
     </div>
   );
