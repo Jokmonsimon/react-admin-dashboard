@@ -8,7 +8,7 @@ export default function Header() {
     <div className="header">
       <div className="header-wrapper">
         <div className="header-left">
-          <span className="logo">Jok-Code AI</span>
+          <span className="logo">Mega Shoppers</span>
         </div>
         <div className="header-right">
           <div className="header-icons-container">
