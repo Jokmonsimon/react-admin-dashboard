@@ -2,3 +2,28 @@
   flex: 5;
   margin: 0px 20px;
 }
+
+.add-product-form {
+  margin-top: 10px;
+}
+
+.add-product-item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.add-product-item > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.add-product-item > input {
+  padding: 10px;
+}
+
+.add-product-item > select {
+  padding: 10px;
+}
