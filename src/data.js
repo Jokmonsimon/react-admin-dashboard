@@ -151,29 +151,26 @@ export const productRows = [
   {
     id: 1,
     productName: "Apple",
-    productImage:
-      "https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg",
-    productCategory: "Pest Trees",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 300,
     status: "Available",
     price: "UGX 4,000",
   },
   {
     id: 2,
-    productName: "Laptop",
-    productImage:
-      "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_960_720.jpg",
-    productCategory: "Toilet Trees",
+    productName: "Gifts",
+    productImage: "images/gifts.jpg",
+    productCategory: "Gifts",
     stock: 432,
     status: "Available",
     price: "UGX 1,489,000",
   },
   {
     id: 3,
-    productName: "Baby Soul",
-    productImage:
-      "https://cdn.pixabay.com/photo/2017/02/08/02/56/booties-2047596_960_720.jpg",
-    productCategory: "Stationaries",
+    productName: "Coca Cola",
+    productImage: "images/cocacola.jpg",
+    productCategory: "Soft Drinks",
     stock: 0,
     status: "Out of stock",
     price: "UGX 48,000",
@@ -181,19 +178,17 @@ export const productRows = [
   {
     id: 4,
     productName: "Apple",
-    productImage:
-      "https://cdn.pixabay.com/photo/2019/01/03/16/11/cylinder-3911269_960_720.png",
-    productCategory: "Spices",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 678,
     status: "Avaialble",
     price: "UGX 35,000",
   },
   {
     id: 5,
-    productName: "Ice Cream",
-    productImage:
-      "https://cdn.pixabay.com/photo/2019/11/23/20/04/coffee-4648041_960_720.jpg",
-    productCategory: "Cereals",
+    productName: "Apple",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 145,
     status: "Available",
     price: "UGX 8,000",
@@ -201,18 +196,16 @@ export const productRows = [
   {
     id: 6,
     productName: "Apple",
-    productImage:
-      "https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg",
-    productCategory: "Pest Trees",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 145,
     status: "Available",
     price: "UGX 6,000",
   },
   {
     id: 7,
-    productName: "Laptop",
-    productImage:
-      "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_960_720.jpg",
+    productName: "Coca Cola",
+    productImage: "images/cocacola.jpg",
     productCategory: "Soft drinks",
     stock: 432,
     status: "Available",
@@ -220,9 +213,8 @@ export const productRows = [
   },
   {
     id: 8,
-    productName: "Baby Soul",
-    productImage:
-      "https://cdn.pixabay.com/photo/2017/02/08/02/56/booties-2047596_960_720.jpg",
+    productName: "Gift",
+    productImage: "images/gifts.jpg",
     productCategory: "Gifts",
     stock: 0,
     status: "Out of stock",
@@ -231,9 +223,8 @@ export const productRows = [
   {
     id: 9,
     productName: "Apple",
-    productImage:
-      "https://cdn.pixabay.com/photo/2019/01/03/16/11/cylinder-3911269_960_720.png",
-    productCategory: "Toilet Trees",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 678,
     status: "Avaialble",
     price: "UGX 35,000",
@@ -241,9 +232,8 @@ export const productRows = [
   {
     id: 10,
     productName: "Ice Cream",
-    productImage:
-      "https://cdn.pixabay.com/photo/2019/11/23/20/04/coffee-4648041_960_720.jpg",
-    productCategory: "Detergents",
+    productImage: "images/apple.jpg",
+    productCategory: "Fruits",
     stock: 145,
     status: "Available",
     price: "UGX 28,000",
